@@ -58,12 +58,14 @@
         background-color:#48203B;
     }
     
-
-
+    .event-text {
+      color: #bf7ca9;
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 
-<body  id="page1">
+<body  id="page1" style="font-family: Georgia, 'Times New Roman', Times, serif;">
 <div class="tail-top">
   	<div class="tail-bottom">
     	<div class="main">
@@ -198,18 +200,20 @@
                     </div>
                     <div class="indent">
                         <div class="container" style="width: 105%; max-width: 980px;">
-                            <div class="col-sm-6 col-md-6 col-lg-4">
-                            	<div class="container"><div class="title"><img alt="" src="http://theuniversalconnectionstore.com/images/icon1.gif" class="icon" /><em><b>Calendar</b></em></div></div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                            	<div class="container"><div class="title"><img alt="" src="http://theuniversalconnectionstore.com/images/icon1.gif" class="icon" /><em><b>Daily Calendar</b></em></div></div>
                                 <div class="event-calendar">
                                     <div id="datepicker"></div>
                                     <div class="events-loader"></div>
                                 </div>
-                            </div>
-                            
-                        	<div class="col-2">
-                                <div class="indent-col">
+                                <div class="">
                                     <div class="event-content scroll-bar"></div>
                                 </div>
+                            </div>
+                            
+                        	<div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="container"><div class="title"><img alt="" src="http://theuniversalconnectionstore.com/images/icon1.gif" class="icon" /><em><b>Classes & Workshops</b></em></div></div>
+                                <img src="green.png" height="610px" style="margin-left: 10px;">
                             </div>
                                     
                         </div>
@@ -230,7 +234,7 @@
         var events = [];
         $.ajax({
             type: 'POST',
-            url: 'events/?controller=event&action=ajaxlist',
+            url: 'http://theuniversalconnectionstore.com/events/?controller=event&action=ajaxlist',
             dataType: 'json',
             beforeSend: function(){
                 $('.events-loader').stop().fadeIn(300);
@@ -242,7 +246,7 @@
                         var _this = this;
                         $.ajax({
                             type: 'POST',
-                            url: 'events/?controller=event&action=ajaxlist&month='+month+'&year='+year,
+                            url: 'http://theuniversalconnectionstore.com/events/?controller=event&action=ajaxlist&month='+month+'&year='+year,
                             dataType: 'json',
                             beforeSend: function(){
                                 $('.events-loader').stop().fadeIn(300);
