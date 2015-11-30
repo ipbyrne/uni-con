@@ -172,15 +172,15 @@
                 <option value="index-1.html"><a href="/index-1.html">About us</a></option> 
                 <option value="index-2.html">For clients</option> 
                 <option value="index-3.html">Services</option> 
-                <option value="index-4.html">Products</option>
+                <option value="index-4.html" value="Products">Products</option>
                 <option value="index-5.html">Contact</option> 
               </select> 
               
               <script>
               $(function(){
-                $('a').each(function() {
-                  if ($(this).prop('href') == window.location.href) {
-                    $(this).addClass('current');
+                $("option").each(function() {
+                  if ('http://127.0.0.1:55763/' + this.value === window.location.href || 'http://theuniversalconnectionstore.com/' + this.value === window.location.href || 'http://ipbyrne.github.io/uni-con/' + this.value === window.location.href) {
+                    this.setAttribute('selected', true);
                   }
                 });
               });
@@ -190,6 +190,10 @@
                   jQuery(".select-nav").change(function () {
                       location.href = jQuery(this).val();
                   })
+                  
+                  if(window.innerWidth < 467) {
+                    document.getElementById('product-header').innerHTML = 'Products'
+                  }
               })
               </script>
               
@@ -230,7 +234,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <div class="container"><div class="title"><img alt="" src="http://theuniversalconnectionstore.com/images/icon1.gif" class="icon" /><em><b>Featured products</b></em></div></div>
+                            <div class="container"><div class="title"><img alt="" src="http://theuniversalconnectionstore.com/images/icon1.gif" class="icon" /><em><b id="product-header">Featured Products</b></em></div></div>
                             <div class="indent-col3">
                                 <div class="container">
                                      <img alt="" src="http://theuniversalconnectionstore.com/images/5page_img1.jpg" class="img-left" />
