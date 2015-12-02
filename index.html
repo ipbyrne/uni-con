@@ -343,7 +343,7 @@
         var events = [];
         $.ajax({
             type: 'POST',
-            url: 'http://theuniversalconnectionstore.com/events/?controller=event&action=ajaxlist',
+            url: 'events/?controller=event&action=ajaxlist',
             dataType: 'json',
             beforeSend: function(){
                 $('.events-loader').stop().fadeIn(300);
@@ -355,7 +355,7 @@
                         var _this = this;
                         $.ajax({
                             type: 'POST',
-                            url: 'http://theuniversalconnectionstore.com/events/?controller=event&action=ajaxlist&month='+month+'&year='+year,
+                            url: 'events/?controller=event&action=ajaxlist&month='+month+'&year='+year,
                             dataType: 'json',
                             beforeSend: function(){
                                 $('.events-loader').stop().fadeIn(300);
