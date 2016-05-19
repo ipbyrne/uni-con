@@ -20,12 +20,12 @@
     .select-nav {
       display:none;
     }
-    
+
     @media (max-width: 960px) {
       .header-btns     { display: none; }
       .select-nav { display: inline-block; }
     }
-    
+
     .call-now {
       top: 80px;
     }
@@ -34,7 +34,7 @@
         top: 240px;
        }
     }
-    
+
     a.btn-info {
       background-color: none;
       background-image: -webkit-gradient(
@@ -67,12 +67,12 @@
         background-image: none;
         background-color:#48203B;
     }
-    
+
     .event-text {
       color: #bf7ca9;
       font-size: 1.1rem;
     }
-    
+
   .ui-datepicker {
     width: 281px;
     margin: auto;
@@ -81,54 +81,54 @@
       height: 38px;
       width: 39px;
     }
-    
+
     .title b {
       font-size: 22px;
       padding-top: 6px;
     }
-    
+
     #content ul li a {
       font-size: 14px;
     }
-    
+
     #content .p, #content p {
       font-size: 12px;
     }
-    
+
     .txt {
       font-size: 24px;
     }
-    
-    
+
+
     .ui-datepicker-calendar {
       margin-left: -50px;
     }
-    
+
     .ui-datepicker-calendar tr {
       width: 400px;
     }
-    
+
     .ui-datepicker-calendar th {
       width: 14%;
     }
-    
+
     .ui-datepicker-calendar td {
       width: 14%;
     }
-    
+
     .scroll-bar .viewport {
       width: 375px;
       left: 20px;
     }
-    
+
     .scrollbar {
       left:-75px;
     }
-    
+
     .event-content {
       margin-top: 45px;
     }
-    
+
     #content .indent-col3 {
       padding: 0;
       margin-left: -5px;
@@ -137,12 +137,12 @@
     #content .title {
       width: 100%;
     }
-    
+
     .about-container {
       padding-right: 55px;
     }
-    
-    
+
+
     #content .p1 {
       font-size: 12px;
     }
@@ -163,19 +163,19 @@
                 <a href="index-4.html" class="btn btn-info" style="width: 16.66%; max-height: 40px;">Products</a>
                 <a href="index-5.html" class="btn btn-info" style="width: 16.66%; max-height: 40px;">Contact</a>
               </div>
-              
-              <!-- Mobile Nav -->
-              <select class="select-nav form-control" style="width: 80%; max-width: 900px;"> 
-                <option value="" selected="selected">Select</option> 
 
-                <option value="index.html"><a href="/index.html">Home</a></option> 
-                <option value="index-1.html"><a href="/index-1.html">About us</a></option> 
-                <option value="index-2.html">For clients</option> 
-                <option value="index-3.html">Services</option> 
+              <!-- Mobile Nav -->
+              <select class="select-nav form-control" style="width: 80%; max-width: 900px;">
+                <option value="" selected="selected">Select</option>
+
+                <option value="index.html"><a href="/index.html">Home</a></option>
+                <option value="index-1.html"><a href="/index-1.html">About us</a></option>
+                <option value="index-2.html">For clients</option>
+                <option value="index-3.html">Services</option>
                 <option value="index-4.html" value="Products">Products</option>
-                <option value="index-5.html">Contact</option> 
-              </select> 
-              
+                <option value="index-5.html">Contact</option>
+              </select>
+
               <script>
               $(function(){
                 $("option").each(function() {
@@ -186,30 +186,30 @@
               });
               jQuery(function () {
                   // remove the below comment in case you need chnage on document ready
-                  // location.href=jQuery("#selectbox").val(); 
+                  // location.href=jQuery("#selectbox").val();
                   jQuery(".select-nav").change(function () {
                       location.href = jQuery(this).val();
                   })
-                  
+
                   if(window.innerWidth < 467) {
                     document.getElementById('product-header').innerHTML = 'Products'
                   }
               })
               </script>
-              
+
               <div style="margin-top: 20px; border: 5px solid #4E2440;border-radius: 5px; width: 100%; max-width: 900px; margin-left: auto; margin-right: auto; background-color: #4E2440; height: 100%; padding-top: 4px;">
                 <img src="logo2.png" style="max-height: 163px; height: 100%; max-width: 293px; width: 100%; border-radius: 7.5px; margin-left: 2px; margin-bottom: 5px;">
                 <img src="114.png" style="margin-bottom: 5px;max-height: 163px; height: 100%; max-width: 293px; width: 100%;">
                 <a href="https://www.google.com/maps?ll=37.305302,-121.899365&z=14&t=m&hl=en&gl=US&mapclient=embed&q=1261+Lincoln+Ave+San+Jose,+CA+95125"><img src="124.png" style="margin-bottom: 5px;max-height: 163px; height: 100%; max-width: 293px; width: 100%;"></a>
                 <br>
                 <img src="100.png" style="margin-bottom: 5px;max-height: 163px; height: 100%; max-width: 293px; width: 100%;">
-                <img src="75.png" style="margin-bottom: 5px;max-height: 163px; height: 100%; max-width: 293px; width: 100%;">
+                <a href="shop-index-1.html"><img src="75-1.png" style="border-radius: 5px; margin-bottom: 5px;max-height: 163px; height: 100%; max-width: 293px; width: 100%;"></a>
                 <img src="107.png" style="margin-bottom: 5px; height: 100%; max-height: 163px; max-width: 293px; width: 100%;">
                 <a href="tel:4085640722"><img class="call-now" src="138.png" style="position: absolute; left: 56.5%;"></a>
               </div>
               <br>
       		</div>
-      		<div id="content" style="width: 100%; max-width: 980px; margin: auto;">		
+      		<div id="content" style="width: 100%; max-width: 980px; margin: auto;">
                 <div class="indent-main" style="padding-left:0px;">
                     <div class="container" style="width: 100%;">
                         <div class="col-lg-4">
@@ -230,7 +230,7 @@
                                    <li><a>Hand made Drums</a></li>
                                    <li><a>Decorative Items</a></li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-8">
@@ -256,12 +256,12 @@
                                      <p class="p1"><p style="color:white">The Universal Connection store stocks a wide range of tools for use in the Divine Arts.  From Handmade Drums, Singing Tibetan Bowls, Staffs, Sacred Geometry, Reading Cards, and the inspirational iBeans to the more decorative pieces of deity sculptures and figurines, art, lamps, photography and items sure to bring peace and tranquility into your space.</p>
                                      <br class="clear" />
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>	 
+            </div>
       		<div id="footer">
                 <div class="indent-footer">The Universal Connection Store &copy; 2012  |<br />
                 <a href="index.html">Home</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="index-1.html">About us</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="index-2.html">For clients</a> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="index-3.html">Services</a> &nbsp; &nbsp; | &nbsp; &nbsp; <span><a href="index-4.html">Products</a></span> &nbsp; &nbsp; | &nbsp; &nbsp; <a href="index-5.html">Contacts</a></div>
